@@ -19,7 +19,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          cd /var/www/nama_khusnul_dinamis
+          cd /var/www/khusnul_dinamis
           git pull origin main
           composer install --no-dev
           php artisan migrate --force
